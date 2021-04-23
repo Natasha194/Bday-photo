@@ -1,0 +1,50 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Birthday</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+
+  <style type="text/css">
+  h3
+  {
+    font-size: 25px !important;
+  }
+  canvas {
+  	border:1px solid black;
+  }
+  </style>
+</head>
+
+
+
+<body class="thing">
+
+  <center>
+<div class="container">
+	<h3 class="btn btn-primary">Happy Birthday</h3>
+	<hr>
+  <br>
+  <span>Tint Color: <input class="form-control" id="tintColor" placeholder="Enter filter color"></span>
+  <br><br>
+  <button onclick="filterTint()" class="btn btn-danger">Apply Filter</button>
+  <br><br>
+  <button onclick="takeSnapshot()" class="btn btn-success">Take Snapshot</button>
+</div>
+
+<h4>Choose frame</h4>
+<br>
+<span id="choice"> <img onclick="noFrame()" src="no frame.png" style="width: 100px;"> <img onclick="normal()" src="frame normal.png" style="width: 100px;"> <img onclick="royal()" src="frame royal.png" style="width: 100px;"> <img onclick="vamp()" src="frame vampire.png" style="width: 100px;"></span>
+
+</center>
+
+<script src="main.js"></script>
+</body>
+
+</html>
